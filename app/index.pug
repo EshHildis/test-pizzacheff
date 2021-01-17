@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+html.is-layout(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, maximum-scale=1.0, user-scalable=no")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title PizzaCheff. Главная
+
+		include _scripts.pug
+		include _styles.pug
+	body
+
+		.wrapper
+			include components/header/header.pug
+			include components/advantages/advantages.pug
+			include components/catalog/catalog.pug
+			include components/order/order.pug
+			include components/footer/footer.pug

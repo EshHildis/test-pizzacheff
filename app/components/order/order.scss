@@ -1,0 +1,124 @@
+.order {
+    margin-bottom: 115px;
+    @media (max-width:767px) {
+        margin-bottom: 50px;
+    }
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+        @media(max-width: 1279px) {
+            display: block;
+        }
+    }
+    &__content {
+        width: 384px;
+        margin-right: 126px;
+        color: #b99150;
+        font-size: 16px;
+        line-height: 24px;
+        @media(max-width: 1279px) {
+            margin: 0;
+            width: 600px;
+        }
+        @media (max-width:767px) {
+            width: 100%;
+        }
+    }
+    &__title {
+        display: block;
+        font-weight: 800;
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: 60px;
+        @media(max-width: 1279px) {
+            margin-bottom: 30px;
+        }
+        @media (max-width:767px) {
+            font-size: 26px;
+            line-height: normal;
+        }
+        span {
+            display: block;
+            &:first-child {
+                color: #ffaf18;
+            }
+        }
+    }
+    &__text {
+        margin-left: 4px; //PixelPerfect
+    }
+    &__form {
+        width: 330px;
+        margin-top: 52px;
+        max-width: 100%;
+    }
+    &__img {
+        position: absolute;
+        top: -57px;
+        right: -128px;
+        z-index: -1;
+        @media(max-width: 1279px) {
+            right: auto;
+            left: 420px;
+            top: auto;
+            bottom: 0;
+        }
+        @media (max-width:767px) {
+            left: 400px
+        }
+        @media (max-width:470px) {
+            display: none;
+        }
+    }
+}
+
+.form {
+    &__field {
+        margin-bottom: 24px;
+        position: relative;
+
+        label.error {
+            position: absolute;
+            top: 100%;
+            margin-top: 2px;
+            left: 0;
+            color: red;
+            font-size: 12px;
+        }
+    }
+    &__input {
+        border: 1px solid #b99150;
+        height: 60px;
+        font-size: 18px;
+        color: #cba86e;
+        padding: 0 20px;
+        display: block;
+        width: 100%;
+        &::placeholder { /* Chrome/Opera/Safari */
+            color:  #cba86e;
+        }
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color:  #cba86e;
+        }
+        &::-moz-placeholder { /* Firefox 19+ */
+        color:  #cba86e;
+        }
+        &:-ms-input-placeholder { /* IE 10+ */
+        color:  #cba86e;
+        }
+        &:-moz-placeholder { /* Firefox 18- */
+        color:  #cba86e;
+        }
+    }
+
+    &__popup {
+        position: relative;
+        width: 400px;
+        max-width: 100%;
+        background-color: #ffffff;
+        padding: 50px 20px;
+        margin: auto;
+    }
+}

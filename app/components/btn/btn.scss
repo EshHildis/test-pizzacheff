@@ -1,0 +1,35 @@
+.btn {
+    display: inline-block;
+    line-height: 60px;
+    font-weight: bold;
+    color: #382400;
+    text-align: center;
+    min-width: 224px;
+    padding: 0 10px;
+    background-color: #ffaf18;
+    transition: background-color 0.3s ease 0s;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    @media (max-width:767px) {
+        line-height: 50px;
+    }
+
+    @include hover {
+        background-color: lighten(#ffaf18, 5);
+    }
+
+    &--block {
+        display: block;
+        min-width: 0;
+        width: 100%;
+    }
+
+    &--small {
+        line-height: 50px;
+        color: #020303;
+        @media (max-width:767px) {
+            line-height: 40px;
+        }
+    }
+}

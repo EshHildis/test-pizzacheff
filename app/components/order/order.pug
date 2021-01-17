@@ -1,0 +1,20 @@
+.order
+    .container
+        .order__inner
+            .order__content
+                h2.order__title
+                    span Хватит думать!
+                    span Доставим заказ за 30 минут!
+                p.order__text Мы  гарантированно доставим вашу пиццу за 30 минут с момента оформления заказа. Если мы опоздаем даже на 1 минуту - вы получаете весь заказ бесплатно и ваучер на скидку на следующий заказ. Мы гордимся нашим сервисом и сделаем всё, чтобы наш клиент был доволен и не остался голодный!
+            form.order__form.form.js-form(action="assets/data/order.json" method="GET")
+                .form__field
+                    input.form__input.js-input-name(type="text" required name="name" placeholder="Ваше имя")
+                .form__field
+                    input.form__input(type="text" required name="address" placeholder="Адрес доставки")
+                .form__field
+                    input.form__input.js-input-phone(type="text" required name="phone" placeholder="Телефон")
+                button.form__btn.btn.btn--block(type="submit") Оформить заказ
+
+                .form__popup.js-form-popup.mfp-hide
+                    span.form__popup-text Форма успешно отправлена
+            img.order__img(src="assets/images/pizzzzza.jpg")

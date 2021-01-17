@@ -1,0 +1,17 @@
+@import '_fonts';
+@import '_reset';
+@import '_func';
+
+/**
+ * Main Styles
+ */
+@import '_global';
+
+
+// Components
+@import '../components/header/header.scss';
+@import '../components/btn/btn.scss';
+@import '../components/advantages/advantages.scss';
+@import '../components/catalog/catalog.scss';
+@import '../components/order/order.scss';
+@import '../components/footer/footer.scss';

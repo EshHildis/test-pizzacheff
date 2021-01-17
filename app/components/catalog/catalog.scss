@@ -1,0 +1,79 @@
+.catalog {
+    margin-bottom: 210px;
+    @media(max-width: 1279px) {
+        margin-bottom: 100px;
+    }
+    @media (max-width:767px) {
+        margin-bottom: 60px;
+    }
+    &__title {
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        font-size: 35px;
+        color: #bd975c;
+        margin-bottom: 57px;
+
+        position: relative; //PixelPerfect
+        left: -3px; //PixelPerfect
+        @media (max-width:767px) {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+    }
+    &__list {
+        margin: 0 -12px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin: 0 12px 22px;
+        width: 282px;
+        @media (max-width:1279px) {
+            width: calc(100% / 3 - 24px);
+        }
+        @media (max-width:767px) {
+            width: calc(100% / 2 - 24px);
+        }
+        @media (max-width:420px) {
+            width: 100%;
+        }
+    }
+}
+
+.card {
+    background-color: #ffffff;
+    box-shadow: 0px 3px 13.8px 1.2px rgba(152, 152, 152, 0.2);
+    text-align: center;
+    padding: 27px 20px 65px;
+    position: relative;
+    &__img {
+        display: block;
+        height: 145px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        margin-bottom: 21px;
+    }
+    &__title {
+        display: block;
+        font-size: 18px;
+        color: #382400;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    &__description {
+        display: block;
+        color: #181a1a;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+    &__btn {
+        position: absolute;
+        bottom: 15px;
+        left: 20px;
+        right: 20px;
+        width: calc(100% - 40px);
+    }
+}

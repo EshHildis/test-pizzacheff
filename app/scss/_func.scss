@@ -1,0 +1,11 @@
+// Hover
+@mixin hover() {
+	@media (min-width: 1280px) {
+		&:hover {
+			@content;
+		}
+	}
+	&:active {
+		@content;
+	}
+}

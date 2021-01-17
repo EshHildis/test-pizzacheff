@@ -1,0 +1,106 @@
+.advantages {
+    margin: 126px 0 160px;
+    @media (max-width:1279px) {
+        margin: 66px 0 120px;
+    }
+    @media (max-width:767px) {
+        margin: 40px 0 90px;
+    }
+    &__inner {
+        position: relative;
+    }
+    &__title {
+        display: block;
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 55px;
+        color: #ffaf18;
+        margin-bottom: 40px;
+        max-width: 672px;
+
+        margin-left: -3px; //PixelPerfect
+
+        @media (max-width:767px) {
+            font-size: 29px;
+            line-height: normal;
+        }
+
+        
+        span {
+            display: block;
+            &:first-child {
+                color: #b99050;
+            }
+        }
+    }
+    &__img {
+        position: absolute;
+        top: 52px;
+        right: 0;
+        @media (max-width:1279px) {
+            width: calc(100% - 300px);
+            max-width: 520px;
+            top: 140px;
+            right: auto;
+            left: 350px;
+        }
+        @media (max-width:767px) {
+            display: none;
+        }
+    }
+    &__list {
+        max-width: 672px;
+        display: flex;
+        margin-bottom: 22px;
+        flex-wrap: wrap;
+        @media (max-width:1279px) {
+            display: block;
+            max-width: 400px;
+        }
+    }
+    &__item {
+        display: flex;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        align-items: center;
+        margin-bottom: 38px;
+        margin-right: 39px;
+        @media (max-width:767px) {
+            margin: 0 0 30px;
+        }
+        &-img {
+            flex-shrink: 0;
+            width: 60px;
+            height: auto;
+            display: block;
+            margin-right: 17px;
+            @media (max-width:767px) {
+                width: 50px;
+                margin-right: 14px;
+            }
+        }
+        &-title {
+            display: block;
+            text-transform: uppercase;
+            color: #ffaf18;
+            margin-bottom: 1px;
+            line-height: 24px;
+            font-weight: 800;
+        }
+        &-text {
+            display: block;
+            color: #b99150;
+            line-height: 16px;
+            width: 230px;
+            @media (max-width:767px) {
+                width: auto;
+            }
+        }
+
+        &:nth-child(even) &-text {
+            @media (min-width:1280px) {
+                width: 210px;
+            }
+        }
+    }
+}
